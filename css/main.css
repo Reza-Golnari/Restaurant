@@ -69,6 +69,14 @@ body { background-color: #292929; }
 
 .checkbox:checked ~ .hamburger-menu .menu-line-3 { transform: rotate(40deg); }
 
+.header { width: 100%; height: 100vh; background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../images/bg.jpeg) center no-repeat; background-size: cover; position: relative; }
+
+.header .brand { position: absolute; top: 15%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; }
+
+@media (max-width: 455px) { .header .brand { flex-direction: column; } }
+
+.header .header-banner { text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
 .hamburger-menu { width: 40px; height: 40px; position: fixed; top: 10%; left: 5%; z-index: 500; }
 
 .hamburger-menu .menu { display: flex; flex-direction: column; justify-content: space-around; cursor: pointer; transition: all 0.5s; overflow: hidden; }
@@ -82,4 +90,72 @@ body { background-color: #292929; }
 @media (max-width: 940px) { .hamburger-menu { width: 30px; height: 30px; } }
 
 @media (max-width: 635px) { .hamburger-menu { width: 20px; height: 20px; } }
+
+.logo { text-decoration: none; width: 110px; height: 110px; color: #d3ab55; border: 3px solid #d3ab55; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 70px; margin-right: 20px; }
+
+@media (max-width: 1600px) { .logo { font-size: 60px; width: 100px; height: 100px; } }
+
+@media (max-width: 1350px) { .logo { font-size: 55px; width: 90px; height: 90px; } }
+
+@media (max-width: 940px) { .logo { font-size: 40px; width: 70px; height: 70px; } }
+
+@media (max-width: 635px) { .logo { font-size: 30px; width: 50px; height: 50px; margin-right: 10px; } }
+
+@media (max-width: 455px) { .logo { margin-right: 0; margin-bottom: 10px; border-width: 2px; } }
+
+.main-name { color: #bbb; font-family: "Nunito", sans-serif; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; font-size: 50px; text-align: center; }
+
+@media (max-width: 1600px) { .main-name { font-size: 4em; } }
+
+@media (max-width: 1350px) { .main-name { font-size: 2.5em; } }
+
+@media (max-width: 940px) { .main-name { font-size: 1.5em; } }
+
+@media (max-width: 635px) { .main-name { font-size: 1em; } }
+
+@media (max-width: 455px) { .main-name { font-size: 1.2em; } }
+
+@media (max-width: 366px) { .main-name { width: 200px; } }
+
+.sub-name { color: #bbb; font-family: "Nunito", sans-serif; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; text-align: center; font-size: 18px; }
+
+@media (max-width: 940px) { .sub-name { font-size: 1em; } }
+
+@media (max-width: 635px) { .sub-name { font-size: 0.8em; } }
+
+@media (max-width: 455px) { .sub-name { font-size: 1em; } }
+
+.main-heading { color: #d3ab55; font-family: "Dancing Script", cursive; font-weight: 300; font-size: 100px; margin-bottom: 50px; }
+
+@media (max-width: 1600px) { .main-heading { font-size: 6em; } }
+
+@media (max-width: 1350px) { .main-heading { font-size: 5em; margin-bottom: 40px; } }
+
+@media (max-width: 940px) { .main-heading { font-size: 3em; } }
+
+@media (max-width: 635px) { .main-heading { font-size: 2.5em; } }
+
+@media (max-width: 455px) { .main-heading { font-size: 3em; } }
+
+.sub-heading { color: #bbb; font-family: "Josefin Sans", sans-serif; font-size: 55px; font-weight: 300; letter-spacing: 2px; margin-bottom: 80px; text-align: center; }
+
+@media (max-width: 1600px) { .sub-heading { font-size: 3em; margin-bottom: 50px; } }
+
+@media (max-width: 1350px) { .sub-heading { font-size: 2.2em; margin-bottom: 40px; } }
+
+@media (max-width: 940px) { .sub-heading { font-size: 1.5em; } }
+
+@media (max-width: 635px) { .sub-heading { font-size: 1.2em; } }
+
+@media (max-width: 455px) { .sub-heading { font-size: 1.1em; } }
+
+.main-btn { color: #d3ab55; background-color: transparent; border: 1px solid #d3ab55; border-radius: 2px; width: 180px; height: 45px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: all 0.2s; font-size: 1.2em; }
+
+.main-btn:hover { background-color: #d3ab55; color: #292929; }
+
+@media (max-width: 940px) { .main-btn { font-size: 1em; } }
+
+@media (max-width: 635px) { .main-btn { font-size: 0.8em; width: 115px; height: 30px; } }
+
+@media (max-width: 455px) { .main-btn { font-size: 0.8em; width: 110px; height: 30px; } }
 /*# sourceMappingURL=main.css.map */
