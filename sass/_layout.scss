@@ -302,3 +302,52 @@
     flex-wrap: wrap;
   }
 }
+
+.footer {
+  @include FlexBox;
+  flex-direction: column;
+  padding: 70px 0;
+
+  &-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+    @media (max-width: 455px) {
+      flex-direction: column;
+    }
+  }
+
+  .social-media {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 70px;
+    @media (max-width: 355px) {
+      width: 100px;
+      justify-content: center;
+    }
+    &-link {
+      font-size: 3em;
+      color: $color-secondary;
+      text-decoration: none;
+      transition: color 0.7s;
+
+      &:hover {
+        color: $color-primary;
+      }
+
+      @media (max-width: 455px) {
+        font-size: 2.5em;
+        margin: 0 5px;
+      }
+    }
+  }
+
+  &-copyright {
+    color: $color-secondary;
+    font-family: $font-nunito;
+    font-size: 1em;
+    text-align: center;
+  }
+}

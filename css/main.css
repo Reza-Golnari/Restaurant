@@ -141,6 +141,24 @@ body { background-color: #292929; }
 
 .gallery .cards-wrapper { display: flex; flex-wrap: wrap; }
 
+.footer { display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 70px 0; }
+
+.footer-header { display: flex; align-items: center; margin-bottom: 70px; }
+
+@media (max-width: 455px) { .footer-header { flex-direction: column; } }
+
+.footer .social-media { width: 300px; display: flex; justify-content: space-between; list-style-type: none; margin-bottom: 70px; }
+
+@media (max-width: 355px) { .footer .social-media { width: 100px; justify-content: center; } }
+
+.footer .social-media-link { font-size: 3em; color: #bbb; text-decoration: none; transition: color 0.7s; }
+
+.footer .social-media-link:hover { color: #d3ab55; }
+
+@media (max-width: 455px) { .footer .social-media-link { font-size: 2.5em; margin: 0 5px; } }
+
+.footer-copyright { color: #bbb; font-family: "Nunito", sans-serif; font-size: 1em; text-align: center; }
+
 .hamburger-menu { width: 40px; height: 40px; position: fixed; top: 10%; left: 5%; z-index: 500; }
 
 .hamburger-menu .menu { display: flex; flex-direction: column; justify-content: space-around; cursor: pointer; transition: all 0.5s; overflow: hidden; }
