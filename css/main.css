@@ -1,4 +1,4 @@
-.hamburger-menu .menu { width: 100%; height: 100%; }
+.hamburger-menu .menu, .card-overlay, .card-img { width: 100%; height: 100%; }
 
 * { margin: 0; padding: 0; }
 
@@ -139,6 +139,8 @@ body { background-color: #292929; }
 
 @media (max-width: 635px) { .about-us-right { display: none; } }
 
+.gallery .cards-wrapper { display: flex; flex-wrap: wrap; }
+
 .hamburger-menu { width: 40px; height: 40px; position: fixed; top: 10%; left: 5%; z-index: 500; }
 
 .hamburger-menu .menu { display: flex; flex-direction: column; justify-content: space-around; cursor: pointer; transition: all 0.5s; overflow: hidden; }
@@ -220,4 +222,36 @@ body { background-color: #292929; }
 @media (max-width: 635px) { .main-btn { font-size: 0.8em; width: 115px; height: 30px; } }
 
 @media (max-width: 455px) { .main-btn { font-size: 0.8em; width: 110px; height: 30px; } }
+
+.card { width: 33.3333%; height: 33vw; position: relative; overflow: hidden; }
+
+@media (max-width: 635px) { .card { width: 50%; height: 50vw; } }
+
+.card:hover .card-overlay { bottom: 0; }
+
+.card-overlay { display: flex; justify-content: center; align-items: center; flex-direction: column; position: absolute; left: 0; bottom: -100%; background-color: rgba(211, 171, 85, 0.6); z-index: 100; transition: bottom 0.5s; }
+
+.card-overlay-heading { color: #292929; font-family: "Josefin Sans", sans-serif; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; font-size: 30px; font-weight: 500; margin-bottom: 30px; }
+
+@media (max-width: 940px) { .card-overlay-heading { font-size: 1.2em; } }
+
+@media (max-width: 360px) { .card-overlay-heading { font-size: 0.9em; } }
+
+@media (max-width: 280px) { .card-overlay-heading { font-family: "Nunito", sans-serif; font-size: 0.7em; font-weight: 700; } }
+
+.card-overlay-paragraph { color: #292929; font-family: "Nunito", sans-serif; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; font-size: 25px; font-weight: 900; margin-bottom: 30px; }
+
+@media (max-width: 940px) { .card-overlay-paragraph { font-size: 1em; } }
+
+@media (max-width: 360px) { .card-overlay-paragraph { font-size: 0.8em; } }
+
+@media (max-width: 280px) { .card-overlay-paragraph { font-family: "Nunito", sans-serif; font-size: 0.7em; font-weight: 700; } }
+
+.card-overlay-btn { width: 110px; height: 30px; color: #d3ab55; background-color: #fff; border: 1px solid #d3ab55; border-radius: 50px; font-family: "Josefin Sans", sans-serif; font-size: 15px; font-weight: 900; cursor: pointer; }
+
+@media (max-width: 940px) { .card-overlay-btn { font-size: 0.8em; width: 80px; height: 25px; } }
+
+@media (max-width: 280px) { .card-overlay-btn { font-size: 0.7em; width: 80px; height: 25px; } }
+
+.card-img { object-fit: cover; opacity: 0.7; }
 /*# sourceMappingURL=main.css.map */
