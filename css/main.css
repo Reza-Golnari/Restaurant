@@ -267,6 +267,8 @@ body { background-color: #292929; }
 
 .card-overlay-btn { width: 110px; height: 30px; color: #d3ab55; background-color: #fff; border: 1px solid #d3ab55; border-radius: 50px; font-family: "Josefin Sans", sans-serif; font-size: 15px; font-weight: 900; cursor: pointer; }
 
+@media (max-width: 1350px) { .card-overlay-btn { font-size: 0.8em; width: 100px; height: 25px; } }
+
 @media (max-width: 940px) { .card-overlay-btn { font-size: 0.8em; width: 80px; height: 25px; } }
 
 @media (max-width: 280px) { .card-overlay-btn { font-size: 0.7em; width: 80px; height: 25px; } }
