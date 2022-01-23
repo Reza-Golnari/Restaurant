@@ -180,11 +180,11 @@
   height: 90vh;
   display: flex;
   align-items: center;
+  @media (max-width: 640px) {
+    margin: 20px 0;
+  }
   @media (max-width: 340px) {
     padding: 20px 0;
-  }
-  @media (max-width: 280px) {
-    padding: 50px 0;
   }
   @media (max-width: 455px) {
     margin: 10px 0px;
